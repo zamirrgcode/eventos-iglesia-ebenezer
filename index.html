@@ -12,55 +12,64 @@
       color: #fff;
       scroll-behavior: smooth;
     }
+    header {
+      height: 100vh;
+      background: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df') no-repeat center center;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 4rem;
+      color: #ffd700;
+      font-weight: bold;
+    }
     section {
+      margin: 80px auto;
+      padding: 40px;
       background: rgba(255,255,255,0.05);
       border-radius: 12px;
-      padding: 40px;
-      margin: 60px auto;
       backdrop-filter: blur(10px);
-      transition: all 0.8s ease;
     }
-    section:hover { transform: scale(1.02); }
     h2 { color: #ffd700; font-weight: bold; }
-    .navbar { background: rgba(0,0,0,0.6); backdrop-filter: blur(6px); }
-    .navbar a { color: #ffd700 !important; font-weight: 500; }
-    .navbar a:hover { color: #fff !important; }
-    footer { background: rgba(0,0,0,0.8); color: #ffd700; text-align: center; padding: 20px; }
+    footer {
+      background: rgba(0,0,0,0.8);
+      color: #ffd700;
+      text-align: center;
+      padding: 20px;
+    }
   </style>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg fixed-top">
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg fixed-top" style="background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);">
   <div class="container">
-    <a class="navbar-brand gold-text" href="#">Eventos Ebenezer</a>
+    <a class="navbar-brand text-warning" href="#">Eventos Ebenezer</a>
     <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">☰</button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#invitaciones">Invitaciones</a></li>
-        <li class="nav-item"><a class="nav-link" href="#calendario">Calendario</a></li>
-        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link" href="../iglesiaebenezer/">Iglesia Ebenezer</a></li>
+        <li class="nav-item"><a class="nav-link text-warning" href="#calendario">Calendario</a></li>
+        <li class="nav-item"><a class="nav-link text-warning" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-warning" href="#contacto">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link text-warning" href="../iglesiaebenezer/">Iglesia Ebenezer</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<header class="text-center py-5 animate__animated animate__fadeInDown" style="margin-top:80px;">
-  <h1 class="gold-text">Eventos e Invitaciones</h1>
-  <p>Conectando con otras congregaciones</p>
+<!-- Intro -->
+<header>
+  <h1 class="animate__animated animate__fadeInDown">Eventos Ebenezer</h1>
+  <p class="animate__animated animate__fadeInUp">Conectando con otras congregaciones</p>
 </header>
 
-<section id="invitaciones" class="container animate__animated animate__fadeInUp">
-  <h2>Próximas invitaciones</h2>
-  <div class="list-group">
-    <div class="list-group-item bg-transparent text-white">📅 7 Febrero – Aniversario Iglesia Emmanuel <a href="https://www.facebook.com/photo?fbid=911169218107027" target="_blank">Facebook</a></div>
-    <div class="list-group-item bg-transparent text-white">📅 7 Febrero – Encuentro Juvenil Iglesia Primitiva <a href="https://www.facebook.com/photo/?fbid=1352999733524108" target="_blank">Facebook</a></div>
-  </div>
-</section>
-
-<section id="calendario" class="container animate__animated animate__fadeInUp">
-  <h2>Calendario</h2>
+<!-- Calendario (Canva incrustado) -->
+<section id="calendario" class="container animate__animated animate__zoomIn">
+  <h2>Calendario de eventos</h2>
   <div style="position: relative; width: 100%; height: 0; padding-top: 70.7071%;
               box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em;
               overflow: hidden; border-radius: 12px; backdrop-filter: blur(8px);">
@@ -71,21 +80,24 @@
   </div>
 </section>
 
+<!-- Galería -->
 <section id="galeria" class="container animate__animated animate__fadeInUp">
   <h2>Galería</h2>
-  <div class="row">
+  <div class="row mt-4">
     <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="img-fluid rounded" alt="Evento 1"></div>
     <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" class="img-fluid rounded" alt="Evento 2"></div>
     <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1524492449090-1a9f3d80d1a8" class="img-fluid rounded" alt="Evento 3"></div>
   </div>
 </section>
 
+<!-- Contacto -->
 <section id="contacto" class="container animate__animated animate__fadeInUp">
   <h2>Contacto</h2>
   <p>📧 contacto@iglesiaebenezer.com</p>
-  <p>📍 Losa Deportiva - Parque Simon Bolivar, Ayacucho</p>
+  <p>📍 Jr. Principal 123, Ayacucho</p>
 </section>
 
+<!-- Footer -->
 <footer>
   <p>&copy; 2026 Iglesia Ebenezer – <span class="gold-text">Hasta aquí nos ayudó Jehová</span></p>
 </footer>
