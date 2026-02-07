@@ -3,164 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Invitaciones Ebenezer</title>
-  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Animate.css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background-color: #fdfdfd;
-      color: #333;
+      background: linear-gradient(135deg, rgba(0,43,92,0.9), rgba(0,64,128,0.8));
+      color: #fff;
     }
-    h1 {
-      color: #ffd700;
-      font-weight: bold;
+    section {
+      background: rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 30px;
+      margin: 40px auto;
+      backdrop-filter: blur(8px);
+      transition: all 0.8s ease;
     }
-    h2 {
-      color: #002b5c;
+    section:hover {
+      transform: scale(1.02);
     }
-    .list-group-item {
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-    }
-    .list-group-item:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    footer {
-      background: #002b5c;
-      color: #ffd700;
-    }
-    .gold-text {
-      color: #ffd700;
-    }
-    .navbar {
-      background-color: #002b5c;
-    }
-    .navbar a {
-      color: #ffd700 !important;
-      font-weight: 500;
-    }
-    .navbar a:hover {
-      color: #fff !important;
-    }
+    h2 { color: #ffd700; }
+    .navbar { background: rgba(0,43,92,0.7); backdrop-filter: blur(6px); }
+    .navbar a { color: #ffd700 !important; }
+    .navbar a:hover { color: #fff !important; }
+    footer { background: rgba(0,43,92,0.8); color: #ffd700; text-align: center; padding: 20px; }
   </style>
 </head>
 <body>
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <a class="navbar-brand gold-text" href="#">Ebenezer</a>
-      <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        ☰
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#invitaciones">Invitaciones</a></li>
-          <li class="nav-item"><a class="nav-link" href="#calendario">Calendario</a></li>
-          <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand gold-text" href="#">Ebenezer Invitaciones</a>
+    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">☰</button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#invitaciones">Invitaciones</a></li>
+        <li class="nav-item"><a class="nav-link" href="#calendario">Calendario</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
     </div>
-  </nav>
-
-  <!-- Carrusel en encabezado -->
-  <div id="carouselHeader" class="carousel slide animate__animated animate__fadeInDown" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img src="https://source.unsplash.com/1600x400/?church,cross" class="d-block w-100" alt="Imagen 1">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="gold-text">Invitaciones Ebenezer</h1>
-          <p>Conectando con otras congregaciones</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://source.unsplash.com/1600x400/?worship,faith" class="d-block w-100" alt="Imagen 2">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="gold-text">Hasta aquí nos ayudó Jehová</h1>
-          <p>Unidos en fe y propósito</p>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <img src="https://source.unsplash.com/1600x400/?community,prayer" class="d-block w-100" alt="Imagen 3">
-        <div class="carousel-caption d-none d-md-block">
-          <h1 class="gold-text">Crezcamos juntos en la Palabra</h1>
-          <p>Invitaciones abiertas a todos</p>
-        </div>
-      </div>
-    </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselHeader" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselHeader" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
   </div>
+</nav>
 
-  <!-- Sección de invitaciones -->
-  <section id="invitaciones" class="container my-5 animate__animated animate__fadeInUp">
-    <h2 class="mb-4">Próximas invitaciones</h2>
-    <div class="list-group">
-      <div class="list-group-item">
-        📅 7 Febrero – Aniversario Iglesia Emmanuel  
-        <a href="https://www.facebook.com/photo?fbid=911169218107027" target="_blank">Facebook</a>
-      </div>
-      <div class="list-group-item">
-        📅 7 Febrero – Encuentro Juvenil Iglesia Primitiva  
-        <a href="https://www.facebook.com/photo/?fbid=1352999733524108" target="_blank">Facebook</a>
-      </div>
-    </div>
-  </section>
+<header class="text-center py-5 animate__animated animate__fadeInDown" style="margin-top:70px;">
+  <h1 class="gold-text">Ebenezer Invitaciones</h1>
+  <p>Conectando con otras congregaciones</p>
+</header>
 
-  <!-- Calendario incrustado -->
-  <section id="calendario" class="container my-5 animate__animated animate__fadeInUp">
-    <h2 class="mb-4">Calendario de invitaciones</h2>
-    <div class="ratio ratio-16x9">
-      <iframe src="https://calendar.google.com/calendar/embed?src=TU_CALENDARIO_PUBLICO&ctz=America/Lima"
-              style="border:0" frameborder="0" scrolling="no"></iframe>
-    </div>
-    <p class="mt-2">👉 Añade este calendario a tu cuenta de Google para verlo junto con tus propios eventos.</p>
-  </section>
+<section id="invitaciones" class="container animate__animated animate__fadeInUp">
+  <h2>Próximas invitaciones</h2>
+  <div class="list-group">
+    <div class="list-group-item">📅 7 Febrero – Aniversario Iglesia Emmanuel <a href="https://www.facebook.com/photo?fbid=911169218107027" target="_blank">Facebook</a></div>
+    <div class="list-group-item">📅 7 Febrero – Encuentro Juvenil Iglesia Primitiva <a href="https://www.facebook.com/photo/?fbid=1352999733524108" target="_blank">Facebook</a></div>
+  </div>
+</section>
 
-  <!-- Galería con carrusel -->
-  <section id="galeria" class="container my-5 animate__animated animate__fadeInUp">
-    <h2 class="mb-4">Galería de eventos</h2>
-    <div id="carouselGaleria" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://source.unsplash.com/800x400/?church,community" class="d-block w-100" alt="Evento 1">
-        </div>
-        <div class="carousel-item">
-          <img src="https://source.unsplash.com/800x400/?worship,faith" class="d-block w-100" alt="Evento 2">
-        </div>
-        <div class="carousel-item">
-          <img src="https://source.unsplash.com/800x400/?choir,concert" class="d-block w-100" alt="Evento 3">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselGaleria" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselGaleria" data-bs-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </button>
-    </div>
-  </section>
+<section id="calendario" class="container animate__animated animate__fadeInUp">
+  <h2>Calendario de invitaciones</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="https://calendar.google.com/calendar/embed?src=tuemail%40gmail.com&ctz=America/Lima"
+            style="border:0" frameborder="0" scrolling="no"></iframe>
+  </div>
+</section>
 
-  <!-- Contacto -->
-  <section id="contacto" class="container my-5 animate__animated animate__fadeInUp">
-    <h2 class="mb-4">Contacto</h2>
-    <p>📧 Correo: contacto@iglesiaebenezer.com</p>
-    <p>📍 Dirección: Jr. Principal 123, Ayacucho</p>
-  </section>
+<section id="galeria" class="container animate__animated animate__fadeInUp">
+  <h2>Galería</h2>
+  <div class="row">
+    <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="img-fluid rounded" alt="Evento 1"></div>
+    <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" class="img-fluid rounded" alt="Evento 2"></div>
+    <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1524492449090-1a9f3d80d1a8" class="img-fluid rounded" alt="Evento 3"></div>
+  </div>
+</section>
 
-  <!-- Pie de página -->
-  <footer class="text-center py-3 animate__animated animate__fadeInUp">
-    <p>&copy; 2026 Iglesia Ebenezer – <span class="gold-text">Hasta aquí nos ayudó Jehová</span></p>
-  </footer>
+<section id="contacto" class="container animate__animated animate__fadeInUp">
+  <h2>Contacto</h2>
+  <p>📧 contacto@iglesiaebenezer.com</p>
+  <p>📍 Losa Deportiva - Parque Simon Bolivar, Ayacucho</p>
+</section>
 
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<footer>
+  <p>&copy; 2026 Iglesia Ebenezer – <span class="gold-text">Hasta aquí nos ayudó Jehová</span></p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
