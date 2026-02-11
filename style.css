@@ -8,11 +8,10 @@
   --color-fondo: #fdfdfd;
 }
 
-/* Fondo con gradiente elegante */
+/* Fondo con gradiente sobrio y elegante */
 body {
   font-family: 'Montserrat', sans-serif;
-  background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 50%, var(--color-fondo) 100%);
-  background-attachment: fixed; /* efecto elegante */
+  background: linear-gradient(180deg, #fdfdfd 0%, #eaf6fb 40%, #ffffff 100%);
   color: #333;
   margin: 0;
   padding-top: 70px;
@@ -20,7 +19,7 @@ body {
 
 /* Navbar translúcida */
 .navbar {
-  background: rgba(255,255,255,0.85) !important;
+  background: rgba(255,255,255,0.9) !important;
   backdrop-filter: blur(6px);
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
@@ -42,13 +41,13 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.5);
 }
 header h1, header p {
   position: relative;
   z-index: 1;
   color: #222;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.1);
 }
 header h1 {
   font-family: 'Raleway', sans-serif;
@@ -57,16 +56,16 @@ header h1 {
 }
 header p {
   font-size: 1.2rem;
-  color: #444;
+  color: #555;
 }
 
 /* Secciones */
 section {
   margin: 60px auto;
   padding: 40px;
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
   max-width: 1200px;
   opacity: 0; /* para animación scroll */
   transform: translateY(30px);
@@ -74,7 +73,7 @@ section {
 h2 {
   font-family: 'Raleway', sans-serif;
   color: var(--color-primario);
-  font-weight: bold;
+  font-weight: 600;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -90,8 +89,8 @@ h2 {
   cursor: pointer;
 }
 .galeria-img:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Lista de agenda */
@@ -103,7 +102,7 @@ h2 {
   transition: background 0.3s ease;
 }
 .list-group-item:hover {
-  background: rgba(0,150,136,0.1);
+  background: rgba(0,102,204,0.05);
 }
 .list-group-item h5 {
   font-family: 'Raleway', sans-serif;
@@ -112,12 +111,12 @@ h2 {
 
 /* Footer */
 footer {
-  background: rgba(255,255,255,0.9);
+  background: rgba(255,255,255,0.95);
   color: #333;
   text-align: center;
   padding: 20px;
   position: relative;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.08);
 }
 
 /* Responsivo */
