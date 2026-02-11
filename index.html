@@ -2,104 +2,83 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Eventos Iglesia Ebenezer</title>
+  <title>Conexión Juvenil Ebenezer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap y Animate.css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      color: #fff;
-      scroll-behavior: smooth;
-    }
-    header {
-      height: 100vh;
-      background: url('https://images.unsplash.com/photo-1529070538774-1843cb3265df') no-repeat center center;
-      background-size: cover;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 4rem;
-      color: #ffd700;
-      font-weight: bold;
-    }
-    section {
-      margin: 80px auto;
-      padding: 40px;
-      background: rgba(255,255,255,0.05);
-      border-radius: 12px;
-      backdrop-filter: blur(10px);
-    }
-    h2 { color: #ffd700; font-weight: bold; }
-    footer {
-      background: rgba(0,0,0,0.8);
-      color: #ffd700;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+  
+  <!-- Estilos globales -->
+  <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg fixed-top" style="background:rgba(0,0,0,0.6);backdrop-filter:blur(6px);">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand text-warning" href="#">Eventos Ebenezer</a>
-    <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">☰</button>
+    <a class="navbar-brand text-primary fw-bold" href="../index.html">Conexión Juvenil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-warning" href="#calendario">Calendario</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="#galeria">Galería</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="#contacto">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link text-warning" href="../iglesiaebenezer/">Iglesia Ebenezer</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#quienes-somos">Quiénes somos</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#eventos">Eventos pasados</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- Intro -->
+<!-- Header -->
 <header>
-  <h1 class="animate__animated animate__fadeInDown">Eventos Ebenezer</h1>
-  <p class="animate__animated animate__fadeInUp">Conectando con otras congregaciones</p>
+  <h1 class="animate__animated animate__fadeInDown fw-bold">Conexión Juvenil Ebenezer</h1>
+  <p class="animate__animated animate__fadeInUp">Un espacio para compartir fe, fotos y experiencias</p>
 </header>
 
-<!-- Calendario -->
-<section id="calendario" class="container animate__animated animate__zoomIn">
-  <h2>Calendario de eventos</h2>
-  <div style="position: relative; width: 100%; height: 0; padding-top: 70.7071%;
-              box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em;
-              overflow: hidden; border-radius: 12px; backdrop-filter: blur(8px);">
-    <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none;"
-      src="https://plan-de-trabajo2026.my.canva.site/" 
-      allowfullscreen="allowfullscreen" allow="fullscreen">
-    </iframe>
-  </div>
-</section>
-
-<!-- Galería -->
-<section id="galeria" class="container animate__animated animate__fadeInUp">
-  <h2>Galería</h2>
+<!-- Galería Juvenil -->
+<section class="container animate__animated animate__fadeInUp">
+  <h2>Galería Juvenil</h2>
   <div class="row mt-4">
-    <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1529070538774-1843cb3265df" class="img-fluid rounded" alt="Evento 1"></div>
-    <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" class="img-fluid rounded" alt="Evento 2"></div>
-    <div class="col-md-4 mb-3"><img src="https://images.unsplash.com/photo-1524492449090-1a9f3d80d1a8" class="img-fluid rounded" alt="Evento 3"></div>
+    <!-- Ejemplo de imagen con subpágina -->
+    <div class="col-12 col-sm-6 col-md-3 mb-3">
+      <a href="galeria/imagen1.html">
+        <img src="../img/juventud1.jpg" class="img-fluid rounded shadow" alt="Juventud 1">
+      </a>
+    </div>
+    <div class="col-12 col-sm-6 col-md-3 mb-3">
+      <a href="galeria/imagen2.html">
+        <img src="../img/juventud2.jpg" class="img-fluid rounded shadow" alt="Juventud 2">
+      </a>
+    </div>
+    <!-- ... repetir hasta 40 imágenes -->
   </div>
 </section>
 
-<!-- Contacto -->
-<section id="contacto" class="container animate__animated animate__fadeInUp">
-  <h2>Contacto</h2>
-  <p>📧 contacto@iglesiaebenezer.com</p>
-  <p>📍 Losa Deportiva - Simon Boliar, Ayacucho</p>
+<!-- Agenda Juvenil -->
+<section class="container animate__animated animate__fadeInUp">
+  <h2>Próximos encuentros</h2>
+  <div class="list-group mt-4">
+    <div class="list-group-item">
+      <h5 class="text-primary">Reunión Juvenil</h5>
+      <small class="text-muted">12 Febrero 2026 – 6:00 PM</small>
+      <p>Un tiempo de alabanza, reflexión y amistad.</p>
+    </div>
+    <div class="list-group-item">
+      <h5 class="text-primary">Taller Creativo</h5>
+      <small class="text-muted">18 Febrero 2026 – 5:00 PM</small>
+      <p>Espacio para desarrollar talentos artísticos y compartir la fe.</p>
+    </div>
+  </div>
 </section>
 
 <!-- Footer -->
-<footer>
-  <p>&copy; 2026 Iglesia Ebenezer – <span class="gold-text">Hasta aquí nos ayudó Jehová</span></p>
+<footer class="position-relative">
+  <p>&copy; 2026 Conexión Juvenil Ebenezer – <span class="fw-bold">Juventud que vive en Cristo</span></p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Cross_simple_white.svg/1024px-Cross_simple_white.svg.png" 
+       alt="Cruz" 
+       style="position:absolute; bottom:10px; right:10px; width:40px; opacity:0.8;">
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
