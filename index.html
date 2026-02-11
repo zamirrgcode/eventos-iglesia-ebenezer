@@ -9,23 +9,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   
-  <!-- Estilos globales -->
-  <link rel="stylesheet" href="../style.css">
+  <!-- Estilos juveniles locales -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand text-primary fw-bold" href="../index.html">Conexión Juvenil</a>
+    <a class="navbar-brand text-primary fw-bold" href="index.html">Conexión Juvenil</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#quienes-somos">Quiénes somos</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#galeria">Galería</a></li>
-        <li class="nav-item"><a class="nav-link text-dark" href="../index.html#eventos">Eventos pasados</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#galeria">Galería</a></li>
+        <li class="nav-item"><a class="nav-link text-dark" href="#agenda">Agenda</a></li>
       </ul>
     </div>
   </div>
@@ -38,26 +37,26 @@
 </header>
 
 <!-- Galería Juvenil -->
-<section class="container animate__animated animate__fadeInUp">
+<section id="galeria" class="container animate__animated animate__fadeInUp">
   <h2>Galería Juvenil</h2>
   <div class="row mt-4">
     <!-- Ejemplo de imagen con subpágina -->
     <div class="col-12 col-sm-6 col-md-3 mb-3">
       <a href="galeria/imagen1.html">
-        <img src="../img/juventud1.jpg" class="img-fluid rounded shadow" alt="Juventud 1">
+        <img src="img/juventud1.jpg" class="img-fluid rounded shadow" alt="Juventud 1">
       </a>
     </div>
     <div class="col-12 col-sm-6 col-md-3 mb-3">
       <a href="galeria/imagen2.html">
-        <img src="../img/juventud2.jpg" class="img-fluid rounded shadow" alt="Juventud 2">
+        <img src="img/juventud2.jpg" class="img-fluid rounded shadow" alt="Juventud 2">
       </a>
     </div>
-    <!-- ... repetir hasta 40 imágenes -->
+    <!-- Repite hasta 40 imágenes -->
   </div>
 </section>
 
 <!-- Agenda Juvenil -->
-<section class="container animate__animated animate__fadeInUp">
+<section id="agenda" class="container animate__animated animate__fadeInUp">
   <h2>Próximos encuentros</h2>
   <div class="list-group mt-4">
     <div class="list-group-item">
@@ -69,6 +68,11 @@
       <h5 class="text-primary">Taller Creativo</h5>
       <small class="text-muted">18 Febrero 2026 – 5:00 PM</small>
       <p>Espacio para desarrollar talentos artísticos y compartir la fe.</p>
+    </div>
+    <div class="list-group-item">
+      <h5 class="text-primary">Campamento Juvenil</h5>
+      <small class="text-muted">25 Febrero 2026 – Todo el día</small>
+      <p>Un encuentro en la naturaleza para fortalecer la comunión.</p>
     </div>
   </div>
 </section>
