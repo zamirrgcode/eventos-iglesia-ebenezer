@@ -1,4 +1,6 @@
-/* Paleta juvenil con variables */
+/* Tipografías profesionales */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Raleway:wght@400;600;700&display=swap');
+
 :root {
   --color-primario: #0066cc;   /* Azul fresco */
   --color-secundario: #009688; /* Verde juvenil */
@@ -6,21 +8,14 @@
   --color-fondo: #fdfdfd;
 }
 
-/* Fondo dinámico con gradiente animado */
+/* Fondo con gradiente elegante */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(270deg, var(--color-primario), var(--color-secundario), var(--color-acento));
-  background-size: 600% 600%;
-  animation: fondoAnimado 15s ease infinite;
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, var(--color-primario) 0%, var(--color-secundario) 50%, var(--color-fondo) 100%);
+  background-attachment: fixed; /* efecto elegante */
   color: #333;
   margin: 0;
   padding-top: 70px;
-}
-
-@keyframes fondoAnimado {
-  0% {background-position:0% 50%;}
-  50% {background-position:100% 50%;}
-  100% {background-position:0% 50%;}
 }
 
 /* Navbar translúcida */
@@ -56,8 +51,9 @@ header h1, header p {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
 }
 header h1 {
+  font-family: 'Raleway', sans-serif;
   font-size: 3rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 header p {
   font-size: 1.2rem;
@@ -76,25 +72,11 @@ section {
   transform: translateY(30px);
 }
 h2 {
+  font-family: 'Raleway', sans-serif;
   color: var(--color-primario);
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-}
-
-/* Tarjetas */
-.card {
-  background: rgba(255,255,255,0.95);
-  border: 1px solid #eee;
-  border-radius: 12px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
-}
-.card h5 {
-  color: var(--color-primario);
 }
 
 /* Galería */
@@ -104,7 +86,7 @@ h2 {
   display: block;
   margin: 0 auto;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
   cursor: pointer;
 }
 .galeria-img:hover {
@@ -124,6 +106,7 @@ h2 {
   background: rgba(0,150,136,0.1);
 }
 .list-group-item h5 {
+  font-family: 'Raleway', sans-serif;
   color: var(--color-secundario);
 }
 
