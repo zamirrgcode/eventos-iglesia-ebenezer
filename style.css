@@ -1,10 +1,26 @@
-/* Fuente y fondo general */
+/* Paleta juvenil con variables */
+:root {
+  --color-primario: #0066cc;   /* Azul fresco */
+  --color-secundario: #009688; /* Verde juvenil */
+  --color-acento: #ff9800;     /* Naranja dinámico */
+  --color-fondo: #fdfdfd;
+}
+
+/* Fondo dinámico con gradiente animado */
 body {
   font-family: 'Poppins', sans-serif;
-  background: #fdfdfd !important; /* blanco suave */
+  background: linear-gradient(270deg, var(--color-primario), var(--color-secundario), var(--color-acento));
+  background-size: 600% 600%;
+  animation: fondoAnimado 15s ease infinite;
   color: #333;
   margin: 0;
   padding-top: 70px;
+}
+
+@keyframes fondoAnimado {
+  0% {background-position:0% 50%;}
+  50% {background-position:100% 50%;}
+  100% {background-position:0% 50%;}
 }
 
 /* Navbar translúcida */
@@ -18,7 +34,7 @@ body {
 header {
   position: relative;
   min-height: 60vh;
-  background: url('../img/intro.jpg') no-repeat center center;
+  background: url('img/intro.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -31,7 +47,7 @@ header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(255,255,255,0.4); /* velo blanco translúcido */
+  background: rgba(255,255,255,0.4);
 }
 header h1, header p {
   position: relative;
@@ -56,9 +72,11 @@ section {
   border-radius: 16px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   max-width: 1200px;
+  opacity: 0; /* para animación scroll */
+  transform: translateY(30px);
 }
 h2 {
-  color: #0066cc;
+  color: var(--color-primario);
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
@@ -76,20 +94,22 @@ h2 {
   box-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 .card h5 {
-  color: #0066cc;
+  color: var(--color-primario);
 }
 
 /* Galería */
-img {
+.galeria-img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
   border-radius: 8px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
-img:hover {
+.galeria-img:hover {
   transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 /* Lista de agenda */
@@ -98,9 +118,13 @@ img:hover {
   border: 1px solid #eee;
   border-radius: 8px;
   margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+.list-group-item:hover {
+  background: rgba(0,150,136,0.1);
 }
 .list-group-item h5 {
-  color: #009688; /* verde juvenil */
+  color: var(--color-secundario);
 }
 
 /* Footer */
